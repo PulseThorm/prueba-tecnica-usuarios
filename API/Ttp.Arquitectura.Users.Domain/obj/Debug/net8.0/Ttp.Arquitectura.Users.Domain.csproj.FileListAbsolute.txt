@@ -1,0 +1,11 @@
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.deps.json
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\Ttp.Arquitectura.Users.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\Ttp.Arquitectura.Users.Domain.AssemblyInfoInputs.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\Ttp.Arquitectura.Users.Domain.AssemblyInfo.cs
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\Ttp.Arquitectura.Users.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\Ttp.Arquitectura.Users.Domain.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\refint\Ttp.Arquitectura.Users.Domain.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\Ttp.Arquitectura.Users.Domain.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Domain\obj\Debug\net8.0\ref\Ttp.Arquitectura.Users.Domain.dll

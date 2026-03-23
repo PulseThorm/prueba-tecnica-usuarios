@@ -1,0 +1,15 @@
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\bin\Debug\net8.0\Ttp.Arquitectura.Users.Application.deps.json
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\bin\Debug\net8.0\Ttp.Arquitectura.Users.Application.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\bin\Debug\net8.0\Ttp.Arquitectura.Users.Application.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.csproj.AssemblyReference.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.AssemblyInfoInputs.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.AssemblyInfo.cs
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.csproj.CoreCompileInputs.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arqu.E29EAFA8.Up2Date
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\refint\Ttp.Arquitectura.Users.Application.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\Ttp.Arquitectura.Users.Application.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Application\obj\Debug\net8.0\ref\Ttp.Arquitectura.Users.Application.dll

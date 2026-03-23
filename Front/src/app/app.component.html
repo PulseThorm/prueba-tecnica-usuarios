@@ -1,0 +1,270 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Administrador de Usuarios</h2>
+
+    <button class="btn btn-primary" (click)="onCreate()">
+      <span class="material-icons align-middle">add</span>
+      Nuevo Usuario
+    </button>
+  </div>
+
+  <div *ngIf="loading" class="alert alert-info">
+    Cargando usuarios...
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <table *ngIf="!loading && users.length > 0"
+         class="table table-bordered table-hover table-striped">
+    
+    <thead class="table-dark">
+      <tr>
+        <th>Nombre Completo</th>
+        <th>Fecha Nacimiento</th>
+        <th>Email</th>
+        <th>Dirección Principal</th>
+        <th class="text-center">Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.fullName }}</td>
+        <td>{{ user.birth | date:'dd/MM/yyyy' }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ getPrimaryAddress(user) }}</td>
+
+        <td class="text-center">
+          <button class="btn btn-sm btn-warning me-2"
+                  (click)="onEdit(user)">
+            <span class="material-icons">edit</span>
+          </button>
+
+          <button class="btn btn-sm btn-danger"
+                  (click)="onDelete(user)">
+            <span class="material-icons">close</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div
+    *ngIf="!loading && users.length > 0"
+    class="d-flex justify-content-end align-items-center gap-2 mt-3"
+  >
+    <button
+      class="btn btn-outline-secondary btn-sm"
+      (click)="goToPreviousPage()"
+      [disabled]="currentPage === 1"
+    >
+      Anterior
+    </button>
+
+    <span class="fw-bold">Página {{ currentPage }}</span>
+
+    <button
+      class="btn btn-outline-secondary btn-sm"
+      (click)="goToNextPage()"
+      [disabled]="!hasNextPage"
+    >
+      Siguiente
+    </button>
+  </div>
+  <div *ngIf="!loading && users.length === 0" class="alert alert-secondary">
+    No hay usuarios para mostrar.
+  </div>
+</div>
+
+
+<!-- Modal Crear Usuario -->
+<div class="modal fade show"
+     tabindex="-1"
+     [ngStyle]="{ display: isCreateModalOpen ? 'block' : 'none', background: 'rgba(0,0,0,0.5)' }"
+     *ngIf="isCreateModalOpen">
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Crear Usuario</h5>
+        <button type="button" class="btn-close" (click)="closeCreateModal()"></button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="mb-3">
+          <label class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" [(ngModel)]="newUser.fullName">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Fecha Nacimiento</label>
+          <input type="date" class="form-control" [(ngModel)]="newUser.birth">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" [(ngModel)]="newUser.email">
+        </div>
+
+        <hr>
+
+        <hr>
+
+    <h6>Direcciones</h6>
+
+    <div *ngFor="let addr of newUser.addresses; let i = index" class="mb-2">
+
+      <div class="d-flex gap-2 align-items-center">
+
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Dirección"
+          [(ngModel)]="addr.street"
+        />
+
+        <input
+          type="radio"
+          name="primaryAddress"
+          [checked]="addr.isPrimary"
+          (change)="setPrimary(i)"
+        />
+
+        <small>Principal</small>
+
+      </div>
+
+    </div>
+
+    <button class="btn btn-sm btn-secondary mt-2" (click)="addAddress()">
+      Añadir Dirección
+    </button>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeCreateModal()">
+          Cancelar
+        </button>
+
+        <button class="btn btn-primary" (click)="createUser()">
+          Crear
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Editar Usuario -->
+<div
+  class="modal fade show"
+  tabindex="-1"
+  *ngIf="isEditModalOpen"
+  [ngStyle]="{
+    display: 'block',
+    background: 'rgba(0,0,0,0.5)'
+  }"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar Usuario</h5>
+        <button
+          type="button"
+          class="btn-close"
+          (click)="closeEditModal()"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label">Nombre Completo</label>
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="editUser.fullName"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Fecha Nacimiento</label>
+          <input
+            type="date"
+            class="form-control"
+            [(ngModel)]="editUser.birth"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            [(ngModel)]="editUser.email"
+          />
+        </div>
+
+        <hr />
+
+        <h6>Direcciones actuales</h6>
+
+        <div
+          *ngFor="let addr of editUser.addresses"
+          class="d-flex justify-content-between align-items-center border rounded p-2 mb-2"
+        >
+          <span>{{ addr.street }}</span>
+          <span class="badge bg-primary" *ngIf="addr.isPrimary">Principal</span>
+        </div>
+
+        <hr />
+
+        <h6>Nuevas direcciones</h6>
+
+        <div
+          *ngFor="let addr of editUser.newAddresses; let i = index"
+          class="mb-2"
+        >
+          <div class="d-flex gap-2 align-items-center">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nueva dirección"
+              [(ngModel)]="addr.street"
+            />
+
+            <input
+              type="radio"
+              name="editPrimaryAddress"
+              [checked]="addr.isPrimary"
+              (change)="setEditPrimary(i)"
+            />
+
+            <small>Principal</small>
+          </div>
+        </div>
+
+        <button class="btn btn-sm btn-secondary mt-2" (click)="addEditAddress()">
+          Añadir Dirección
+        </button>
+
+        <div class="alert alert-secondary mt-3">
+          Las direcciones existentes no se pueden editar ni eliminar. Solo se pueden agregar nuevas.
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeEditModal()">
+          Cancelar
+        </button>
+
+        <button class="btn btn-warning" (click)="updateUser()">
+          Guardar cambios
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

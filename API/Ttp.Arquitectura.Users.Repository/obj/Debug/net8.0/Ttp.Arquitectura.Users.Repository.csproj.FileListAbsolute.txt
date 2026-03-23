@@ -1,0 +1,17 @@
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\bin\Debug\net8.0\Ttp.Arquitectura.Users.Repository.deps.json
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\bin\Debug\net8.0\Ttp.Arquitectura.Users.Repository.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\bin\Debug\net8.0\Ttp.Arquitectura.Users.Repository.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\bin\Debug\net8.0\Ttp.Arquitectura.Users.Domain.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.csproj.AssemblyReference.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.AssemblyInfoInputs.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.AssemblyInfo.cs
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.csproj.CoreCompileInputs.cache
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arqu.C53E8177.Up2Date
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\refint\Ttp.Arquitectura.Users.Repository.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.pdb
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\ref\Ttp.Arquitectura.Users.Repository.dll
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\bin\Debug\net8.0\Ttp.Arquitectura.Users.Repository.runtimeconfig.json
+C:\Users\fleoo\OneDrive\Escritorio\Aplicativo\API\Ttp.Arquitectura.Users.Repository\obj\Debug\net8.0\Ttp.Arquitectura.Users.Repository.genruntimeconfig.cache
